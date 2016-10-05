@@ -1,0 +1,16 @@
+Things to remember:
+
+1) int to string
+2) Extended Euclidean (mod and division)
+3) Amicable numbers and sociable numbers
+4) Finding out divisors of the number
+5) pythagoras trips using arithmetic and number theory (problem 09)
+6) Divisibility analysis (problem 42)
+7) use of inverse functions to determine a value
+8) chinese remainder theorem
+9) Miller Rabin theore
+
+Sites to remember
+
+1)www.mathblog.dk- euler problems
+2)youtube - made easy series by Randell Heyman

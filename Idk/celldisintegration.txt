@@ -1,0 +1,51 @@
+Original Values : 
+Input :
+IM : 11 222 33333 44444
+OB : 12 123 12345 12345
+P  : 00 112 11233 12345  
+
+MP : 12 342 56478 56478 
+
+Final Output :
+OBID : 12 34 5678
+PID  : 00 11 3322
+LIFE : 12 12 1111
+
+Add frame separators in P 
+
+00%112%11233%12345%
+No of % (special characters) denote no of frames.
+
+
+To get OBID : 
+	1) Use P from original values 
+	2) Take an indexer value 1.
+	3) create a new vector.
+	3) Traverse over P.
+		a) Look for consecutive values. 
+		b) Mark them with the value of indexer.
+		c) Increament indexer.
+
+NOTE : create a modified array P with consecutive values replaced by indexer as mentioned above. Created in the above step itself. Lets call this array as MP.
+
+MP : 12%342%56478%//56478 (this logic to include or exclude will be handled in the code itself according to the use cases). 
+
+To get PID :
+	1) Use MP and OBID.
+	2) For the first frame mark all the nodes as 0. Mark the nodes covered.
+	2) Find the first instance of each node number.
+	3) Take index of the first instance. Find the value at the corresponding index in original P.  
+	4) Next find the index (value taken at step 3) of one frame back in MP.
+	5) Store this in corresponding array.
+
+
+
+To get LIFE:
+	1) Create a map.
+	2) Count and store the occurence of each character in MP.
+
+
+Doubts:
+
+1) Calculation for Life. There is something wrong with this exanple in case of life. Can you please explain that.
+2) I think the algo will be modified in one of the cases (that you illustrated on the call). So is ot fine right now or should modify the algo? 
