@@ -12,7 +12,7 @@ def get_obid(p):
 		i=i+1
 
 	while (i < len(p)-1):
-		if(p[i]==" "):
+		if(p[i]==" " and obid[-1]!=" "):
 			obid.append(" ")
 		elif(p[i]==p[i+1]):
 			while(True):
@@ -42,21 +42,17 @@ def get_mp(p):
 		 
 		if(p[i]==" "):
 			prev_frame = cur_frame
-			j = 0 
-			cur_frame = i + 1	
+			cur_frame = i + 1
 			mp.append(" ")	
 		elif (p[i]==p[i+1]):
 			while(True):
 				mp.append(x)
 				x=x+1
 				if(p[i]!=p[i+1]):					
-					j = j + 1					
 					break				
 				i=i+1			
-	
 		elif(p[i]!=p[i+1]):		
-			mp.append(mp[prev_frame + j])	
-			j =j + 1
+			mp.append(mp[prev_frame + p[i] - 1])	
 		i = i + 1
 	return mp
 
@@ -72,7 +68,7 @@ def get_first_occurence_map(mp):
 
 	return first_occurence_map
 
-def get_pid(mp,p,obid):
+def get_pid(mp,p):
 	pid = []
 	mark = {}
 	mark = set()
@@ -91,7 +87,8 @@ def get_pid(mp,p,obid):
 		if (mp[i] == " "):
 			prev_frame = cur_frame
 			cur_frame = i + 1
-			pid.append(" ")
+			if (pid[-1] != " "):
+				pid.append(" ")
 
 		elif(mp[i] not in mark):
 			mark.add(mp[i])
@@ -113,10 +110,13 @@ def get_life(mp,obid):
 
 	return life 
 
+im = [1,1,1,2,2,2,3,3,4,4]
+ob = [1,2,3,1,2,3,1,2,1,2]
+p = [0,0,0,1,2,3,3,3,1,2]
 
-im = [1,1,2,2,2,3,3,3,3,3,4,4,4,4,4]
-ob = [1,2,1,2,3,1,2,3,4,5,1,2,3,4,5]
-p = [0,0,1,1,2,1,1,2,3,3,1,2,3,4,5]
+# im = [1,1,2,2,2,3,3,3,3,3,4,4,4,4,4]
+# ob = [1,2,1,2,3,1,2,3,4,5,1,2,3,4,5]
+# p = [0,0,1,1,2,1,1,2,3,3,1,2,3,4,5]
 
 '''ims =  raw_input('Enter im')
 obs = raw_input('Enter ob')
@@ -169,7 +169,7 @@ print "MP : ", mp
 obid = get_obid(p)
 print "OBID : ", obid
 
-pid = get_pid(mp,p,obid)
+pid = get_pid(mp,p)
 print "PID : ", pid
 
 life = get_life(mp,obid)
