@@ -96,7 +96,6 @@ def get_pid(mp,p):
 		
 		i = i + 1
 
-
 	return pid
 	
 
@@ -110,9 +109,11 @@ def get_life(mp,obid):
 
 	return life 
 
-im = [1,1,1,2,2,2,3,3,4,4]
-ob = [1,2,3,1,2,3,1,2,1,2]
-p = [0,0,0,1,2,3,3,3,1,2]
+im = 	 [1,1, 2,2, 3,3, 4,4,4]
+ob = 	 [1,2, 1,2, 1,2, 1,2,3]
+p =  	 [0,0, 1,2, 1,1, 1,2,2]
+cell_x = [10,90, 20,85, 22,24, 22,23,84]
+cell_y = [10,90, 20,90, 20,21, 22,23,91]
 
 # im = [1,1,2,2,2,3,3,3,3,3,4,4,4,4,4]
 # ob = [1,2,1,2,3,1,2,3,4,5,1,2,3,4,5]
@@ -121,25 +122,35 @@ p = [0,0,0,1,2,3,3,3,1,2]
 '''ims =  raw_input('Enter im')
 obs = raw_input('Enter ob')
 ps = raw_input('Enter p')
+cell_xs = row_input('Enter cell_x')
+cell_ys = row_input('Enter cell_y')
 for s in ims:
 	im.append(s)
 for s in obs:
 	ob.append(s)
 for s in ps:
 	p.append(s)
+for s in cell_xs:
+	cell_x.append(s)
+for s in cell_ys:
+	cell_y.append(s)
 '''
 
 im_temp = []
 ob_temp = []
 p_temp = []
+cell_x_temp = []
+cell_y_temp = []
 
 '''im_temp.append(im[0])
 ob_temp.append(ob[0])
-p_temp.append(p[0])'''
+p_temp.append(p[0])
+cell_x_temp(cell_x[0])
+cell_x_temp(cell_y[0])
+'''
 
 for i in range(0,len(im)-1):
 	if(im[i]!=im[i+1]):
-
 		im_temp.append(im[i])
 		im_temp.append(" ")
 
@@ -148,20 +159,33 @@ for i in range(0,len(im)-1):
 
 		p_temp.append(p[i])
 		p_temp.append(" ")
+
+		cell_x_temp.append(cell_x[i])
+		cell_x_temp.append(" ")
+
+		cell_y_temp.append(cell_y[i])
+		cell_y_temp.append(" ")
 	else:	
 		im_temp.append(im[i])
 		ob_temp.append(ob[i])
 		p_temp.append(p[i])
+		cell_x_temp.append(cell_x[i])
+		cell_y_temp.append(cell_y[i])
+
 
 im_temp.append(im[i+1])
 ob_temp.append(ob[i+1])
 p_temp.append(p[i+1])
+cell_x_temp.append(cell_x[i+1])
+cell_y_temp.append(cell_y[i+1])
 
 p_temp.append(" ")
 
 im = im_temp
 ob = ob_temp
 p = p_temp
+cell_x = cell_x_temp
+cell_y = cell_y_temp
 
 mp = get_mp(p)
 print "MP : ", mp
