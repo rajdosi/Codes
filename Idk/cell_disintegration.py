@@ -1,5 +1,7 @@
 import sys as xyz
 
+disappearing_nodes_to_coordinates_map = {}
+
 def get_obid(p):
 	x=1
 	obid=[]
@@ -56,6 +58,14 @@ def get_mp(p):
 		i = i + 1
 	return mp
 
+def validation_for_old_node():
+
+	return True;
+
+def similarity_check_for_two_nodes(n1_xcord, n1_ycord, n2_xcord, n2_ycord):
+
+
+	return True;
 
 def get_first_occurence_map(mp):
 	first_occurence_map = {}
