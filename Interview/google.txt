@@ -1,0 +1,171 @@
+Topics of importance:
+
+1) Dynamic Programming:
+	a) Knapsack
+	b) digit dp
+
+2) Graph(most important!!)
+	a) Dijkstra
+	b) Bellman Ford
+	c) Advanced dfs, bfs algorithms
+
+3) String
+	a) String matching(Z algorithm or kmp)
+	b) Trie
+
+4) Maths
+	a) Divisors sum and product
+	b) Euler totient
+
+5) Must do data-structures
+	a) Segment Tree/ BIT
+	b) Trie
+	c) Union Find
+
+Useful resources:
+
+1) https://www.interviewbit.com/search/?q=Google
+2) https://www.geeksforgeeks.org/google-interview-questions/
+3) http://www.learn4master.com/interview-questions/leetcode/leetcode-problems-classified-by-company?fbclid=IwAR0MdorGQ1qA_H_SDlgcWFrwUXERoL9k5t_yI6VR8yF2Ie6o5j43avWNnBc
+[28/06, 18:46] 
+
+**********
+Sample questions..
+
+Questions 1 - Suppose I have a bunch of coins in my pocket, which we can represent as an array like so :
+
+[1,5,10]
+
+What are the unique sums of money that I might get if I just randomly grab some coins from my pocket.
+
+
+
+Questions 2 - Return the count of the most popular element in the given non-empty int[ ]
+
+Array is not necessarily sorted. may not alter input array, but if needed may allocate new memory.
+
+Examples:
+
+MaxCount ({7,7,8,8,9}) is 2
+MaxCount ({7,7,8,8, 8,9}) is 3
+MaxCount ({7, 8, 9, 8,7,7}) is 3
+MaxCount ({7,7,7}) is 3
+
+
+Questions 3- You're working on a project and you noticed that there has been a performance decrease between two releases. You have a function :
+Boolean worseCommit 
+( int commit1, int commit 2)
+
+That runs performance tests and returns true if commit2 is worse that commit1 and false otherwise.
+
+Find all of the bad commits that have decreased the performance between releases.
+
+Assume no improvement in performance.
+
+Example : 
+
+     1 2 3 4 5
+      ^.          ^
+1 2 3 4 5| 1 2 3 4 5
+^.    ^.              ^.    ^
+1 2 3 4 5| 1 2 3 4 5
+    ^  ^.                ^ ^
+1 2 3 4 5
+      ^
+
+Could be 1....1 E10
+
+
+Questions 4 - 
+
+You got a list of floats, output a unique list of floats. Floats number are considered equal iff  |a-b|<precision (e.g.a=1.01, b=1.00, precision= 0.1).
+
+Questions 5-part  (a)
+
+You got a matrix of size n*m filled with 0s and 1s, suggest if there is a way to go from the top most row to the bottom most row.
+
+You can not travel cells containing 0 and from a given cell you can only move in Up, Down, Left and Right direction.
+
+Question 5 Part (b) :
+
+Find out one of the paths ( any path)
+
+Question 5 Part (c) :
+
+Find out the shortest path, if the matrix consist of non - negative numbers denoting the cost of passing via that cell, and you can't pass through cells containing 0.
+
+**********
+
+There is a machine which we want to run different programs on according to a schedule ( start time and execution duration) everyday. Wr want to check if a new program can be added to the schedule on the same Machine.
+
+Initial Problem :
+
+Only 1 program can be running at any given time..
+
+Example :
+
+Already Scheduled P1 (10,5) , P2(25,15)
+
+Start time > 10, Duration : 5
+
+New Program (18,7) >can schedule , st:18, et:25
+
+New Program (12,10)> can't schedule; st: 12, et: 22 ( conflicts with P1)
+
+**********
+
+ DP: Can not be restricted to a few examples, interviewer can ask anything. General understanding of how to use DP is more important than doing some questions. 
+
+Game theory: winning position/best outcome in DPs. 
+
+
+Binary Search: identifying use cases of binary search in case of problems involving a monotonic sequence/equation. 
+
+Graph: Topological Sort, Connected components, May be coloring/bi-partite matching too. 
+
+Tree: know at least one balanced bst. Applications of BST in problems. 
+
+Use of Heaps, Hashmaps, Sets.
+
+
+**********
+
+These are the sample questions, you may find the same in Interviewbit as well..
+
+Pl keep it very confedential...
+
+Only for practice purpose
+
+**********
+
+1- Given an initial binary pattern and a goal binary pattern, and a collection of "safe " binary patterns, determine if there are exists a sequence of safe binary patterns that starts with the initial and ends with the goal.
+
+2- Write code to implement auto- suggest as you type feature ( like Google search)
+
+3- implement a client side cache
+
+4- parallelization a computation on manu vectors. given a large number of vectors of different sizes, on each vector you have to perform the following computation.
+
+V =a1,a2,a3,...an
+Compute sum f(ai,aj) for all i, j and i<j
+
+This has to be done on all the input vectors.
+How can you parallelize this effectively.
+
+
+5- Given m*n rooms grid, where few rooms are closed , few rooms are open and few rooms are open and have guards. Open rooms are connected by doors. For each room find minimum distance from the guard. 
+
+6- (a) You are given a rooter tree. The grasshopper is originally at the root of the tree. At each point in ( discrete) time, the grasshopper randomly picks a child node and jumps there. If there are not any child nodes , the grasshopper is Trapped in the node forever.
+A long time had passed since the grasshopper started its journey. For each node of the tree, calculate the probability of finding the grasshopper at that node.
+
+6(b) The grasshopper was caught and put on a directed acyclic graph ( DAG). You are given the structure of the DAG , and the node of the grasshopper was initially put on.
+A long time has planned since the grasshopper started its journey. For each node of the DAG, calculate the probability of finding the grasshopper at that node.
+
+7 - Given a binary tree where each node knows the total count of its children, write FindNthNode (root, N) , where N is the node's index based on in- order traversal.
+
+8- Given an infinite grid and a finite blocked walls ( co- ordinates) on the grid, find if it's possible to reach a given destination point for a person standing on a given source point. The co-ordinate of the walls , source point and the destination point are given as an input and person can move in all 8 directions.
+
+********
+You may find these questions easy but during interview, Interviewer puts more follow up and edge cases..
+
+So you can create your own scenarios..

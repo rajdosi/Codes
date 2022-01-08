@@ -1,0 +1,116 @@
+Preparation plan
+
+Resources
+
+	- DS and Algorithms
+		○ Theory 
+			§ Online (youtube, blogs)
+		○ Questions - Leetcode
+	- Problem Solving 
+		○ Questions - Hackerrank
+
+
+Week 0
+
+	- Prepare a study plan
+	- Update resume
+	
+
+Week 1 
+
+	- Easy questions on leetcode and hackerrank.
+	- Build up speed in writing easy code.
+	- Build up easy concepts and techniques.
+	- 45 min mock interview at the end of the week
+
+
+Week 2
+
+	-  Data Structures (part 1)
+		○ Arrays
+		○ Linked List (LL & DLL)
+		○ Stacks
+		○ Queues
+	- Algorithms (part 1)
+		○ Big(O)
+		○ Searching 
+		○ Sorting
+	- Start approaching medium questions.
+	- Build up medium concepts and techniques.
+	- 45 min mock interview at the end of the week.
+	- Start solving level 1 company interviews.
+
+
+Week 3
+
+	- Data Structures (part 2)
+		○ Maps
+		○ Sets
+	- Algorithms (part 2)
+		○ Backtracking
+		○ Memorization
+		○ Dynamic Programming
+	- Build up speed in solving medium questions.
+	- Start approaching hard questions.
+	- 45 min mock interview at the end of the week.
+	- Start solving level 2 company interviews
+
+
+Week 4
+
+	- Data Structures (part 3)
+		○ Trees
+		○ Heaps
+		○ Graphs
+	- Algorithms (part 3)
+		○ Traversal
+		○ Common tree & graph algorithms
+	- Build up hard concepts and techniques.
+	- Get better at handling hard questions.
+	- 45 min mock interview at the end of the week.
+
+
+Week  5
+
+	- Data Structures (part 4)
+		○ Data structure design
+		○ Common java data structures
+	- Algorithms (part 4)
+		○ Mix-match of algorithms
+	- 45 min mock interview at the end of the week
+	- Start solving level 3 company interviews
+	- Practice coding on plain editors
+
+
+Week 6
+
+	- Improve coding on plain editors
+	- Revisit learnings from mock interviews
+	- Reassure soft and interview skills
+	- System Design
+
+
+Week 7
+
+	- Revisit learnings
+	- System Design
+	- Ready for interviews
+
+
+Strengths
+
+	- Problem solving
+	- Ability to learn
+
+
+Weaknesses 
+
+	- Out of touch - competitive programming
+	- Coding speed
+	- Edge case handling
+
+
+Considerations
+
+	- Most available time would be on weekends.
+Work deadlines.
